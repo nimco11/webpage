@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial;
+            padding:10px ;
+            background: #f1f1f1;
+        }
+        .Header{
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .Header h1{
+            font-size: 50px;
+        }
+        /*Style the top navigation bar */
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+        /*Style the topnav links*/
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*Change color on hover*/
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            
+        }
+        /*Create two unequal column that floats next to each other */
+        /*left column*/
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        /*Right column*/
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+
+        }
+        /*Fake image */
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+        /*add a card effect for articles  */
+        .card {
+            background-color: white;
+            padding: 20PX;
+            margin-top: 20PX;
+        }
+        /* Clear floats after the column */
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*Footer*/
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact me</a>
+        <a href="#"Style="float:Right">link</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <H5>title description,DEC, 7,2017</H5>
+                <div class="fakeimg" style="height: 200px;">image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo rem accusamus? Ab est vel hic explicabo! Vero voluptates laboriosam et maxime nobis, sit nulla officia, magnam corrupti, eos esse!l</p>
+                </div>
+                <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <H5>title description,sep, 2, 2017</H5>
+                    <div class="fakeimg" style="height: 200px;">image</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio explicabo rem accusamus? Ab est vel hic explicabo! Vero voluptates laboriosam et maxime nobis, sit nulla officia, magnam corrupti, eos esse!l</p>
+                </div>
+            </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height: 100px;">image</div>
+            <p>Some text about me in culpa qui afficia anim</p>
+    </div>
+    <div class="card">
+        <h3>Popular post</h3>
+        <div class="fakeimg"><p>image</p></div>
+        <div class="fakeimg"><p>image</p></div>
+        <div class="fakeimg"><p>image</p></div>
+    </div>
+    <div class="card">
+        <h3>Fallow me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur ad</p>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <h2>&COPY;footer</h2>
+    </div>
+</body>
+</html>
